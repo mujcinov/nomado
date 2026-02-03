@@ -1,5 +1,6 @@
-import './App.css'
+import './App.css';
 import Stepper from "./Stepper";
+import HeroContent from "./HeroContent";
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
             <div className="hamburger">☰</div>
           </div>
         </header>
-        <Stepper />
+        <HeroContent />
 
       </div>
 
