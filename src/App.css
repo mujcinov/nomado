@@ -10,6 +10,8 @@ html, body, #root {
   background-image: url("/src/assets/malaysia.jpg");
   background-size: cover;
   background-position: center;
+  padding-top: 64px;
+  box-sizing: border-box;
 }
 
 /* TOP BAR */
