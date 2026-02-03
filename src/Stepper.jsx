@@ -9,7 +9,7 @@ function Stepper({ activeStep, onChange }) {
             width: 12,
             height: 12,
             borderRadius: "50%",
-            margin: "10px 0",
+            margin: "0 10px",
             cursor: "pointer",
             display: "flex",
             flexDirection: "row",
