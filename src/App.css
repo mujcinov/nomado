@@ -8,6 +8,8 @@ html, body, #root {
   width: 100vw;
   height: 100vh;
   background-image: url("/src/assets/malaysia.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .content {
