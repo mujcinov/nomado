@@ -10,7 +10,6 @@ html, body, #root {
   background-image: url("/src/assets/malaysia.jpg");
   background-size: cover;
   background-position: center;
-  position: relative;
 }
 
 /* TOP BAR */
