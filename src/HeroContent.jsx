@@ -3,19 +3,19 @@ import Stepper from "./Stepper";
 
 const steps = [
   {
-    title: "Istražite destinacije",
+    title: "Uzbekistan",
     description: "Otkrijte najlepša mesta širom sveta.",
   },
   {
-    title: "Planirajte put",
+    title: "Malezija",
     description: "Birajte datume i prilagodite putovanje.",
   },
   {
-    title: "Rezervišite lako",
+    title: "Nepal",
     description: "Brza i sigurna online rezervacija.",
   },
   {
-    title: "Putujte bez brige",
+    title: "Vijetnam",
     description: "Uživajte, mi brinemo o svemu.",
   },
 ];
