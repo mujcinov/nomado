@@ -1,4 +1,5 @@
 import './App.css'
+import Stepper from "./Stepper";
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
             <div className="hamburger">☰</div>
           </div>
         </header>
+        <Stepper />
+
       </div>
 
       <div className="content"></div>
