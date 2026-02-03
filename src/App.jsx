@@ -2,9 +2,9 @@ import './App.css'
 
 function App() {
  return (
-  <div className="app">
+  <div className="hero">
     </div>
-  <div className="below">
+  <div className="content">
     </div>
   )
 }
