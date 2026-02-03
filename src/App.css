@@ -7,11 +7,11 @@ html, body, #root {
 .hero {
   width: 100vw;
   height: 100vh;
-  background: #000; /* hero background */
+  background-image: url("/src/assets/malaysia.jpg");
 }
 
 .content {
   width: 100vw;
   min-height: 100vh;
-  background-image: url("/src/assets/malaysia.jpg");
+  
 }
