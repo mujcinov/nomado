@@ -12,8 +12,77 @@ html, body, #root {
   background-position: center;
 }
 
-.content {
-  width: 100vw;
-  min-height: 100vh;
-  
+/* TOP BAR */
+.top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* MENU (desktop only) */
+.menu {
+  display: none;
+  gap: 24px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+/* ACTIONS */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.call-text,
+.cta {
+  display: none;
+}
+
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* DESKTOP VIEW */
+@media (min-width: 768px) {
+  .top-bar {
+    justify-content: space-between;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .call-text {
+    display: inline;
+    margin-left: 8px;
+  }
+
+  .cta {
+    display: inline-block;
+    padding: 8px 16px;
+    background: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+  }
 }
