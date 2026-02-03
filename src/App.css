@@ -14,14 +14,14 @@ html, body, #root {
 
 /* TOP BAR */
 .top-bar {
-  position: relative;
-  width: 100%;
-  padding: 16px 20px;
+  height: 64px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: white;
 }
+
 
 
 .logo {
