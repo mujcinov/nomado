@@ -11,6 +11,8 @@ function Stepper({ activeStep, onChange }) {
             borderRadius: "50%",
             margin: "10px 0",
             cursor: "pointer",
+            flexDirection: "row",
+
             backgroundColor:
               activeStep === step
                 ? "white"
