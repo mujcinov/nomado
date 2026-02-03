@@ -24,7 +24,7 @@ function HeroContent() {
   const [activeStep, setActiveStep] = useState(0);
 
   return (
-    <div style={{ display: "flex", gap: 24 }}>
+    <div style={{ display: "flex", gap: 24, alignItems: "center" }}>
       <Stepper activeStep={activeStep} onChange={setActiveStep} />
 
       <div>
