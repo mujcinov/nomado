@@ -1,7 +1,5 @@
 import { useState } from "react";
 import Stepper from "./Stepper";
-import EmblaCarousel from "./EmblaCarousel";
-
 const steps = [
   {
     title: "Uzbekistan",
@@ -27,7 +25,7 @@ function HeroContent() {
   return (
     <div style={{ display: "flex", gap: 24, alignItems: "center" }}>
       <Stepper activeStep={activeStep} onChange={setActiveStep} />
-      <EmblaCarousel/>
+  
 
       <div>
         <h1>{steps[activeStep].title}</h1>
