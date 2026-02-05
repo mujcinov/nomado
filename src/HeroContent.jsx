@@ -27,6 +27,7 @@ function HeroContent() {
   return (
     <div style={{ display: "flex", gap: 24, alignItems: "center" }}>
       <Stepper activeStep={activeStep} onChange={setActiveStep} />
+      <EmblaCarousel/>
 
       <div>
         <h1>{steps[activeStep].title}</h1>
