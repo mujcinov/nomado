@@ -1,6 +1,8 @@
 function Stepper({ activeStep, onChange }) {
   return (
-    <div>
+    <div
+      style={{ display: "flex" }}
+      >
       {[0, 1, 2, 3].map((step) => (
         <div
           key={step}
