@@ -1,6 +1,4 @@
 import './App.css';
-import Stepper from "./Stepper";
-import HeroContent from "./HeroContent";
 
 function App() {
   return (
