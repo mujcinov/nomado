@@ -26,7 +26,7 @@ function App() {
             <div className="hamburger">☰</div>
           </div>
         </header>
-        <HeroContent />
+      
 
       </div>
 
