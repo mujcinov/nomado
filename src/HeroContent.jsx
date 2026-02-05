@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Stepper from "./Stepper";
+import EmblaCarousel from "./EmblaCarousel";
 
 const steps = [
   {
