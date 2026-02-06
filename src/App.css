@@ -4,14 +4,28 @@ html, body, #root {
   margin: 0;
 }
 
+
 .hero {
   width: 100vw;
   height: 100vh;
-  background-image: url("/src/assets/malaysia.jpg");
+  background-image: url(/malaysia.jpg);
   background-size: cover;
   background-position: center;
   padding-top: 10px;
   box-sizing: border-box;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
 }
 
 /* TOP BAR */
@@ -28,6 +42,8 @@ html, body, #root {
 
 .logo {
   font-weight: bold;
+  
+   height: 20px;
   font-size: 18px;
 }
 
@@ -58,6 +74,14 @@ html, body, #root {
   display: block;
   font-size: 24px;
   cursor: pointer;
+}
+
+
+.call-icon {
+
+  color: white;
+fill: white;
+
 }
 
 /* DESKTOP VIEW */
