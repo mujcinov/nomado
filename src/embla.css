@@ -137,8 +137,10 @@ flex-direction: column;
   margin-left: 1rem;
   margin-bottom: 0.1rem;
   margin-top: 0.3rem;
+  color: white;
 }
 .embla__controls p {
   align-self: self-start;
   margin-left: 1rem;
+  color: white;
 }
