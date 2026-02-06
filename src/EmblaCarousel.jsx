@@ -12,7 +12,7 @@ const DESTINATIONS = [
     desc: "Uživajte u bojama Puta svile"
   },
   {title: "Malezija",
-    desc: "Spoj modernog i divljeg"
+    desc: "Spoj modernog i tradicionalnog"
   },
   {title: "Nepal",
     desc: "Neki opis nesto nezz"
