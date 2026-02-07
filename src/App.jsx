@@ -4,6 +4,7 @@ import Hamburger from 'hamburger-react';
 import { useState } from 'react';
 import { ImPhone } from "react-icons/im";
 import { IconContext } from "react-icons";
+import SearchBar from './components/SearchBar'
 
 
 function App() {
@@ -35,10 +36,10 @@ function App() {
           </div>
         </header>
       <EmblaCarousel />
-
+      <SearchBar />
       </div>
 
-      <div className="content"></div>
+    
     </>
   );
 }

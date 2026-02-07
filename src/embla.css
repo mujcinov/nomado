@@ -129,7 +129,7 @@ flex-direction: column;
 .embla__dot.is-selected {
   transform: scale(1.2);
   opacity: 1;
-  background: orange;
+  background: rgb(255, 115, 0);
 
 }
 .embla__controls h1 {

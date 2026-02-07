@@ -1,0 +1,133 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  top: 5rem;
+  width: 80%;
+  border-radius: 0.6rem;
+  background-color: rgba(255, 255, 255, 0.164);
+  height: 70px;
+  backdrop-filter: blur(1px);
+-webkit-backdrop-filter: blur(1px);
+transition: ease 0.3s;
+}
+
+.wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px; /* border thickness */
+  border-radius: inherit;
+  background: linear-gradient(
+    135deg,
+    #00ffff00,
+    #00ffff00,
+    #00ffff00,
+    #00ffff00,
+    #ffffff,
+    #00ffff00,
+    #00ffff00,
+    #00ffff00,
+    #00ffff00
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+.wrapper.open{
+  top: 4rem;
+  transition: ease 0.3s;
+  
+}
+
+.wrapper.open::before{
+  
+ background: linear-gradient(
+    135deg,
+    #00ffff00,
+    #00ffff00,
+    #00ffff00,
+    #00ffff00,
+    #00ffff00,
+    #ffffff,
+    #00ffff00,
+    #00ffff00,
+    
+    #00ffff00
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  transition: background 0.3s;
+}
+.button {
+  
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  background: rgb(206, 206, 206);
+  height: 50px;
+  border-radius: 0.5rem;
+  box-shadow:
+  inset 0 0 0 1px rgb(255, 255, 255),
+  inset 0 0 6px rgb(255, 255, 255);
+}
+.button:focus {
+  outline: none;
+}
+.button:focus-visible {
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.9),
+    inset 0 0 6px rgba(255, 255, 255, 0.8);
+}
+.button:active {
+  background-color: rgba(255, 255, 255, 0.671);
+
+}
+.dropdown-menu {
+  position: absolute;
+  top: 110%;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  background: rgba(255, 255, 255, 0.473);
+  padding: 12px;
+  flex-direction: column;
+  opacity: 0;
+  pointer-events: none;
+ align-items: center;
+ width: 90%;
+  transition: 0.3s ease;
+border-radius: 0.5rem;
+ 
+
+}
+.dropdown-menu a {
+color: rgb(34, 34, 34);
+}
+.dropdown-menu a:hover {
+  color: rgb(255, 115, 0);
+}
+
+/* active (mobile tap) */
+.dropdown-menu a:active {
+  color:rgb(255, 115, 0);
+}
+.dropdown-menu.open {
+  opacity: 1;
+   pointer-events: auto;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
