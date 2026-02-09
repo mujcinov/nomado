@@ -10,7 +10,6 @@ import SearchBar from './components/SearchBar'
 function App() {
   const [isOpen, setOpen] = useState(false)
   return (
-    <>
       <div
         className="hero"
       >
@@ -38,9 +37,6 @@ function App() {
       <EmblaCarousel />
       <SearchBar />
       </div>
-
-    
-    </>
   );
 }
 

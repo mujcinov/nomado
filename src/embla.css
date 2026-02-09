@@ -43,7 +43,7 @@
 }
 
 .embla__slide__number {
-  height: var(--slide-height);
+  height: 40vh;
   border-radius: 1.8rem;
 
   font-size: 4rem;
@@ -138,9 +138,11 @@ flex-direction: column;
   margin-bottom: 0.1rem;
   margin-top: 0.3rem;
   color: white;
+  font-size: 7vh;
 }
 .embla__controls p {
   align-self: self-start;
   margin-left: 1rem;
   color: white;
+  font-size: 3vh;
 }
