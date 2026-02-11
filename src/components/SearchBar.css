@@ -27,7 +27,7 @@ transition: ease 0.3s;
     #00ffff00,
     #00ffff00,
     #00ffff00,
-    #ffffff,
+    #ffffff91,
     #00ffff00,
     #00ffff00,
     #00ffff00,
@@ -47,7 +47,7 @@ transition: ease 0.3s;
 }
 
 .wrapper.open::before{
-  
+   transition: background 1s;
  background: linear-gradient(
     135deg,
     #00ffff00,
@@ -55,7 +55,7 @@ transition: ease 0.3s;
     #00ffff00,
     #00ffff00,
     #00ffff00,
-    #ffffff,
+    #ffffff83,
     #00ffff00,
     #00ffff00,
     
@@ -67,10 +67,27 @@ transition: ease 0.3s;
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   pointer-events: none;
-  transition: background 0.3s;
+ 
+}
+
+.icon-search {
+  margin-left: 0.5rem;
+  display: flex;
+  align-self: center;
+  color: rgb(255, 115, 0);
+  
+}
+
+.icon-play {
+  display: flex;
+  align-self: center;
+  color: rgb(75, 75, 75);
+  transform: rotate(-180deg);
+
 }
 .button {
-  
+  outline: none;
+  border: 0;
   display: flex;
   justify-content: space-between;
   justify-self: center;
@@ -85,8 +102,12 @@ transition: ease 0.3s;
   inset 0 0 6px rgb(255, 255, 255);
 }
 .button p {
+  margin-left: -1rem;
   align-self: center;
+  font-size: 1rem;
   color: rgb(53, 53, 53);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Helvetica, Arial, sans-serif;
 }
 .button:focus {
   outline: none;
@@ -120,6 +141,9 @@ border-radius: 0.5rem;
 }
 .dropdown-menu a {
 color: rgb(34, 34, 34);
+ text-decoration: none;
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Helvetica, Arial, sans-serif;
 }
 .dropdown-menu a:hover {
   color: rgb(255, 115, 0);
