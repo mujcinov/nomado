@@ -1,7 +1,11 @@
+.wrapperTours {
+    font-family: Helvetica, Arial, sans-serif;
+
+}
 .wrapperTours h1 {
     margin-top: -2vh;
 }
 .topbar-tours {
     height: 7vh;
-    background: chartreuse;
+    background: rgb(219, 219, 219);
 }
