@@ -1,11 +1,10 @@
 .embla {
   max-width: 48rem;
-  
+
   margin: auto;
   --slide-height: 25rem;
   --slide-spacing: 1rem;
   --slide-size: 70%;
- 
 }
 
 .embla__viewport {
@@ -35,8 +34,6 @@
   );
 }
 
-
-
 .embla__slide {
   flex: 0 0 var(--slide-size);
   padding-left: var(--slide-spacing);
@@ -52,13 +49,13 @@
   align-items: center;
   justify-content: center;
   user-select: none;
-  background-size:cover;
+  background-size: cover;
 }
 
 .embla__controls {
- border: none;
+  border: none;
   display: flex;
-flex-direction: column;
+  flex-direction: column;
 
   margin-top: 1.5rem;
   justify-content: center;
@@ -120,7 +117,7 @@ flex-direction: column;
   position: absolute;
   display: flex;
   align-items: center;
-  content: '';
+  content: "";
 }
 .embla__dot:focus {
   outline: none;
@@ -130,11 +127,17 @@ flex-direction: column;
   transform: scale(1.2);
   opacity: 1;
   background: rgb(255, 115, 0);
-
 }
 .embla__controls h1 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-               Roboto, Helvetica, Arial, sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
   align-self: self-start;
   margin-left: 1rem;
   margin-bottom: 0.1rem;
@@ -143,8 +146,15 @@ flex-direction: column;
   font-size: 7vh;
 }
 .embla__controls p {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-               Roboto, Helvetica, Arial, sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
   align-self: self-start;
   margin-left: 1rem;
   color: white;

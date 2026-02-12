@@ -1,0 +1,166 @@
+.trip-card {
+  background: rgb(255, 255, 255);
+  border-radius: 1rem;
+  margin: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: #575757;
+  border: 1px solid rgba(0, 0, 0, 0.123);
+}
+.info-section {
+  flex: 1;
+  padding: 0 1rem;
+}
+.info-section h1 {
+  font-size:x-large;
+}
+.image {
+  height: 220px;
+  background-image: url(/uzbekistan.jpg);
+  background-size: cover;
+
+  margin: 0.5rem;
+  border-radius: 1rem;
+}
+
+.tags p {
+  display: inline-block;
+  border-radius: 0.5rem;
+  padding: 2px 10px;
+  background-color: #c3d3e2;
+  color: rgb(37, 37, 37);
+}
+h1 {
+  margin: 1rem 0 0 0;
+}
+blockquote {
+  margin: 0;
+  font-style: italic;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  row-gap: 8px;
+  column-gap: 12px;
+  font-size: small;
+}
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin: 0; /* important: remove default margin */
+}
+.price p {
+  margin: 1rem 0 0 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+
+.buttons {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-self: center;
+  margin: 1rem 0;
+}
+
+.details-button {
+  align-items: center;
+  background-color: #ff6600;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.details-button:hover,
+.details-button:focus { 
+  background-color: #7e5116;
+  color: #ffffff;
+}
+
+.details-button:active {
+  background: #3b2409;
+  color: rgb(255, 255, 255, .7);
+}
+
+.details-button:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+.itinirery-button {
+  align-items: center;
+  background-color: #6a92b8;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.itinirery-button:hover,
+.itinirery-button:focus { 
+  background-color: #3c4d63;
+  color: #ffffff;
+}
+
+.itinirery-button:active {
+  background: #435568;
+  color: rgb(255, 255, 255, .7);
+}
+
+.itinirery-button:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}

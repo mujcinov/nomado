@@ -1,4 +1,7 @@
-.wrapperTours {
+.wrapperTours h1 {
+    margin-top: -2vh;
+}
+.topbar-tours {
+    height: 7vh;
     background: chartreuse;
-    height: 3vh;
 }
