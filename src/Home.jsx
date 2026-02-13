@@ -27,7 +27,7 @@ function Home() {
 
     <button className="cta">Putujte s nama</button>
   </div>
-  <Navigation />
+  <div className='nav-wrap-home'><Navigation /></div>
 </header>
 
         <EmblaCarousel />

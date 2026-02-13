@@ -15,6 +15,7 @@
   height: 100%;
   color: #575757;
   border: 1px solid rgba(0, 0, 0, 0.13);
+ 
 }
 .info-section {
   flex: 1;
@@ -109,7 +110,7 @@ h2 {
   font-family: inherit;
   font-size: 14px;
   font-weight: 450;
-  background: rgb(255, 102, 0);
+  background: #ff7200;
   color: white;
   padding: 0.7em 1em;
   padding-left: 0.9em;
@@ -211,4 +212,27 @@ h2 {
   to {
     transform: translateY(-0.1em);
   }
+}
+@media (min-width: 768px) {
+  .trip-card {
+    flex-direction: row;
+    max-width: 1000px;
+  }
+  .info-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .image {
+  
+  width: 300px;
+  background-size: cover;
+
+
+  border-radius: 10px;
+}
 }

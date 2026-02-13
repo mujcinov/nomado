@@ -24,7 +24,8 @@ function TripCard({trip}) {
     <div className="trip-card">
       <div className="image" style={{ backgroundImage: `url(${trip.image})` }}></div>
      <div className="info-section">
-       <div className="tags">
+     <div className="left-desktop">
+        <div className="tags">
         <p>{trip.tags}</p>
       </div>
       <h2>{trip.name}</h2>
@@ -39,7 +40,9 @@ function TripCard({trip}) {
         <dt>Uključeno:</dt>
         <dd>{trip.included}</dd>
       </dl>
-      <div className="price">
+     </div>
+      <div className="right-desktop">
+        <div className="price">
         <p>Cijena od</p>
         <div className="price-adjust">
           <h2>{trip.price} KM</h2>
@@ -58,6 +61,7 @@ function TripCard({trip}) {
           <div className="arrow-icon"><FaArrowCircleRight  /></div>
         <span>Detalji putovanja</span>
         </button>
+      </div>
       </div>
      </div>
     </div>

@@ -55,7 +55,7 @@ function Tours() {
             ))}
           </div>
         </div>
-        <Navigation/>
+        <div className="nav-wrap-tours"><Navigation/></div>
       </div>
       <div className="text-bar">
         <div>
