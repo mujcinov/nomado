@@ -1,5 +1,6 @@
 .wrapper {
   position: relative;
+
   display: flex;
   justify-self: center;
   justify-content: center;
@@ -81,6 +82,7 @@
   transform: rotate(-180deg);
 }
 .button {
+  position: relative;
   outline: none;
   border: 0;
   display: flex;
@@ -124,20 +126,23 @@
 }
 .dropdown-menu {
   position: absolute;
-  top: 110%;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 100%;
+
   display: flex;
-  justify-content: center;
-  justify-self: center;
-  background: rgba(255, 255, 255, 0.473);
-  padding: 12px;
   flex-direction: column;
+  align-items: center;
+
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 0.5rem;
+
   opacity: 0;
   pointer-events: none;
-  align-items: center;
-  width: 90%;
-  transition: 0.3s ease;
-  border-radius: 0.5rem;
+  transition: opacity 0.3s ease;
 }
+
 .dropdown-menu a {
   color: rgb(34, 34, 34);
   text-decoration: none;

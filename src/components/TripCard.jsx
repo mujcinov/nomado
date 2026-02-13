@@ -4,6 +4,22 @@ import { RiDownloadCloud2Fill } from "react-icons/ri";
 import { IoInformationCircle } from "react-icons/io5";
 
 function TripCard({trip}) {
+   const formattedStartDate = new Date(trip.startDate).toLocaleDateString(
+    "de-DE",
+    {
+      day: "2-digit",
+      month: "2-digit",
+      year: "numeric",
+    }
+  );
+   const formattedEndDate = new Date(trip.endDate).toLocaleDateString(
+    "de-DE",
+    {
+      day: "2-digit",
+      month: "2-digit",
+      year: "numeric",
+    }
+  );
   return (
     <div className="trip-card">
       <div className="image" style={{ backgroundImage: `url(${trip.image})` }}></div>
@@ -12,21 +28,21 @@ function TripCard({trip}) {
         <p>{trip.tags}</p>
       </div>
       <h2>{trip.name}</h2>
-      <blockquote>I tako dalje nesto da ima vise teksta nmp bzvz</blockquote>
+      <blockquote>{trip.desc}</blockquote>
       <dl className="desc-list">
         <dt>Trajanje:</dt>
-        <dd>{trip.duration}</dd>
+        <dd>{trip.duration} dana</dd>
         <dt>Datum polaska:</dt>
-        <dd>11. april 2026</dd>
+        <dd>{formattedStartDate}</dd>
         <dt>Datum povratka</dt>
-        <dd>20. april 2026</dd>
+        <dd>{formattedEndDate}</dd>
         <dt>Uključeno:</dt>
-        <dd>Letovi - Hoteli - Vodič - Doručak</dd>
+        <dd>{trip.included}</dd>
       </dl>
       <div className="price">
         <p>Cijena od</p>
         <div className="price-adjust">
-          <h2>2490 KM</h2>
+          <h2>{trip.price} KM</h2>
           <span>/po osobi</span>
         </div>
       </div>

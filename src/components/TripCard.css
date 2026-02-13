@@ -14,7 +14,7 @@
   flex-direction: column;
   height: 100%;
   color: #575757;
-  border: 1px solid rgba(0, 0, 0, 0.021);
+  border: 1px solid rgba(0, 0, 0, 0.13);
 }
 .info-section {
   flex: 1;
@@ -50,7 +50,7 @@
 
 blockquote {
   margin: 0;
-  font-style: italic;
+  font-size:small;
 }
 
 dl {

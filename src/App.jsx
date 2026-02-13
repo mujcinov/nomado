@@ -8,6 +8,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/putovanja" element={<Tours />} />
+      <Route path="/putovanja/:slug" element={<Tours />} />
     </Routes>
   );
 }
