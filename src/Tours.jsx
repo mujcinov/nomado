@@ -30,16 +30,16 @@ function Tours() {
         <Link to="/">
   <img src="/logo2.png" alt="Nomado Travel logo" className="logo-topbar" />
 </Link>
-        <div className="dropdown">
+        <div className="dropdown-tours">
           <div
-            className={`dropdown-toggle ${open ? "open" : ""}`}
+            className={`dropdown-toggle-tours ${open ? "open" : ""}`}
             onClick={() => setOpen(!open)}
           >
             Odaberite destinaciju
             <span className="arrow">▾</span>
           </div>
 
-          <div className={`dropdown-menu ${open ? "open" : ""}`}>
+          <div className={`dropdown-menu-tours ${open ? "open" : ""}`}>
             <Link to="/putovanja" onClick={() => setOpen(false)}>
               Sve destinacije
             </Link>
