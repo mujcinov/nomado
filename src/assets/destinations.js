@@ -1,3 +1,5 @@
+import { MdFeaturedPlayList } from "react-icons/md";
+
 export const destinations = [
   {
     id: 1,
@@ -11,6 +13,7 @@ export const destinations = [
     price: 2490,
     startDate: "2026-04-11",
     endDate: "2026-04-20",
+    featured: true,
   },
   {
     id: 2,
@@ -24,6 +27,7 @@ export const destinations = [
     price: 2490,
     startDate: "2026-04-10",
     endDate: "2026-04-19",
+    featured: true,
   },
    {
     id: 3,
@@ -37,5 +41,6 @@ export const destinations = [
     price: 2490,
     startDate: "2026-04-11",
     endDate: "2026-04-20",
+    featured: true,
   },
 ];

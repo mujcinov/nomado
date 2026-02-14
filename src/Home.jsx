@@ -5,10 +5,12 @@ import { useState } from 'react';
 import { ImPhone } from "react-icons/im";
 import SearchBar from './components/SearchBar';
 import Navigation from './components/Navigation'; // ✅ import it
+import TripCard from "./components/TripCard";
+import { destinations } from "./assets/destinations";
 
 function Home() {
   const [isOpen, setOpen] = useState(false);
-
+  const featuredTrips = destinations.filter(trip => trip.featured);
   return (
     <div>
       <div className="hero">
@@ -32,6 +34,14 @@ function Home() {
 
         <EmblaCarousel />
         <SearchBar />
+      </div>
+      <div className='home-feed'>
+      <div className="simple-carousel">
+  {destinations.filter(t => t.featured).map(trip => (
+    <TripCard key={trip.id} trip={trip} variant="featured" />
+  ))}
+</div>
+
       </div>
     </div>
   );

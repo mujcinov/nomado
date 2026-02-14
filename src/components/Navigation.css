@@ -28,8 +28,26 @@
 }
 
 .menu a {
+  position: relative;
   color: white;
   text-decoration: none;
+}
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(255, 102, 0);
+
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.menu a:hover::after {
+  transform: scaleX(1);
 }
 
 .hamburger {

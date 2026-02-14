@@ -72,6 +72,24 @@
 .cta {
   display: none;
 }
+.home-feed {
+ 
+}
+.simple-carousel {
+  display: flex;
+  gap: 1rem;
+  margin-left: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.simple-carousel > * {
+  flex: 0 0 70%;
+  scroll-snap-align: start;
+}
 
 /* DESKTOP VIEW */
 @media (min-width: 768px) {
@@ -98,4 +116,11 @@
     z-index: 20;
     order: 2;
   }
+   .simple-carousel{
+    margin-left: 0;
+   }
+  .simple-carousel > * {
+  flex: 0 0 25%;
+  scroll-snap-align: start;
+}
 }

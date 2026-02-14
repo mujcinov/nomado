@@ -2,19 +2,13 @@
   background: rgb(255, 255, 255);
   border-radius: 10px;
   margin: 0.5rem;
-  box-shadow:
-      0 1px 1px hsl(0deg 0% 0% / 0.075),
-      0 2px 2px hsl(0deg 0% 0% / 0.075),
-      0 4px 4px hsl(0deg 0% 0% / 0.075),
-      0 8px 8px hsl(0deg 0% 0% / 0.075),
-      0 16px 16px hsl(0deg 0% 0% / 0.075)
-    ;
+ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   
   display: flex;
   flex-direction: column;
   height: 100%;
   color: #575757;
-  border: 1px solid rgba(0, 0, 0, 0.13);
+  
  
 }
 .info-section {
@@ -213,6 +207,25 @@ h2 {
     transform: translateY(-0.1em);
   }
 }
+
+/* Featured styles */
+.trip-card--featured {
+  box-shadow: none;
+  flex-direction: column;
+  
+}
+.trip-card--featured .tags {
+  display: none;
+}
+.trip-card--featured .desc-list {
+  display: none;
+}
+.trip-card--featured .buttons {
+  display: none;
+}
+.trip-card--featured .price-info {
+  display: none;
+}
 @media (min-width: 768px) {
   .trip-card {
     flex-direction: row;
@@ -235,4 +248,27 @@ h2 {
 
   border-radius: 10px;
 }
+.trip-card--featured {
+  box-shadow: none;
+  flex-direction: column;
+  
+}
+.trip-card--featured .tags {
+  display: none;
+}
+.trip-card--featured .desc-list {
+  display: none;
+}
+.trip-card--featured .buttons {
+  display: none;
+}
+.trip-card--featured .price-info {
+  display: none;
+}
+.trip-card--featured .info-section {
+  display: flex;
+  flex-direction: column;
+}
+
+
 }

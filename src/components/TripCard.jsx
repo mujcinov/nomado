@@ -3,7 +3,7 @@ import { FaArrowCircleRight } from "react-icons/fa";
 import { RiDownloadCloud2Fill } from "react-icons/ri";
 import { IoInformationCircle } from "react-icons/io5";
 
-function TripCard({trip}) {
+function TripCard({trip, variant = "default"}) {
    const formattedStartDate = new Date(trip.startDate).toLocaleDateString(
     "de-DE",
     {
@@ -21,7 +21,7 @@ function TripCard({trip}) {
     }
   );
   return (
-    <div className="trip-card">
+     <div className={`trip-card trip-card--${variant}`}>
       <div className="image" style={{ backgroundImage: `url(${trip.image})` }}></div>
      <div className="info-section">
      <div className="left-desktop">
