@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.single-trip {
+    background: wheat;
+    width: 100%;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.single-trip-topbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.single-trip-topbar img {
+    height: 2.5rem;
+    max-width: 100%;
+}
+
+.single-trip-image {
+    height: 10rem;
+    background-size: cover;
+}

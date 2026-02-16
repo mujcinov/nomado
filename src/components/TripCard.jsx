@@ -2,6 +2,7 @@ import "./TripCard.css";
 import { FaArrowCircleRight } from "react-icons/fa";
 import { RiDownloadCloud2Fill } from "react-icons/ri";
 import { IoInformationCircle } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 function TripCard({trip, variant = "default"}) {
    const formattedStartDate = new Date(trip.startDate).toLocaleDateString(
@@ -57,10 +58,12 @@ function TripCard({trip, variant = "default"}) {
           <div className="download-icon"><RiDownloadCloud2Fill /></div>
         <span>Preuzmi program</span>
         </button>
+        <Link to={`/${trip.unique}`}>
         <button className="details-button">
           <div className="arrow-icon"><FaArrowCircleRight  /></div>
         <span>Detalji putovanja</span>
         </button>
+        </Link>
       </div>
       </div>
      </div>
