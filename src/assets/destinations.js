@@ -4,6 +4,7 @@ export const destinations = [
   {
     id: 1,
     name: "Uzbekistan",
+    title: "Uzbekistan April 2026",
     slug: "uzbekistan",
     unique: "uzbekistan-april-26",
     desc: "Uzbekistan je zemlja bajkovitih gradova, drevnih karavana i veličanstvene islamske arhitekture.",

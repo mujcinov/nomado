@@ -97,6 +97,9 @@ h2 {
   justify-self: center;
   margin: 1rem 0;
 }
+.buttons a {
+  text-decoration: none;
+}
 
 .details-button {
   width: 10rem;

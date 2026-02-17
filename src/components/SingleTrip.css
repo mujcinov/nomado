@@ -9,25 +9,114 @@ html, body {
 }
 
 .single-trip {
-    background: wheat;
+  
     width: 100%;
-    overflow: hidden;
+
     flex-wrap: wrap;
 }
-.single-trip-topbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    flex-wrap: wrap;
+.single-trip-feed {
+  padding: 1rem;
 }
-.single-trip-topbar img {
-    height: 2.5rem;
-    max-width: 100%;
+.singletrip-tag p {
+  width: fit-content;
+  padding: 5px;
+  background: rgb(204, 204, 204);
+  border-radius: 0.5rem;
 }
 
-.single-trip-image {
-    height: 10rem;
-    background-size: cover;
+.gallery-scroll {
+  width: 100vw;
+  
+  display: grid;
+  grid-auto-flow: row;       /* stavlja grid po kolonama horizontalno */
+  grid-template-columns:repeat(14, 75px);    /* širina “jedne jedinice” */
+  grid-auto-rows: 50px; /* broj redova i visina */
+  gap: 14px;
+  overflow-x: auto;             /* omogući horizontalni scroll */
+  padding-bottom: 10px;         /* da scrollbar ne preklapa slike */
+  scroll-snap-type: x mandatory; /* opcionalno: snap kada swipe */
+  overflow-x: auto;       /* scroll i dalje radi */
+  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.gallery-scroll img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+  scroll-snap-align: start;     /* snap alignment */
+  flex-shrink: 0;               /* ne skupljaj slike */
+}
+
+
+.img-1 {
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 4;
+}
+
+.img-2 {
+  grid-column: 1 / span 2;
+  grid-row: 5/ span 2;
+}
+
+.img-3 {
+  grid-column: 3 / span 2;
+  grid-row: 5 / span 2;
+}
+
+.img-4 {
+  grid-column: 5 / span 3;
+  grid-row: 1 / span 3;
+}
+
+.img-5 {
+  grid-column: 8 / span 3;
+  grid-row: 1 / span 3;
+}
+
+.img-6 {
+  grid-column: 5 / span 3;
+  grid-row: 4 / span 3;
+}
+
+.img-7 {
+  grid-column: 8 / span 3;
+  grid-row: 4 / span 3;
+}
+
+.img-8 {
+  grid-column: 11 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.img-9 {
+  grid-column: 13 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.img-10 {
+  grid-column: 11 / span 4;
+  grid-row: 3 / span 4;
+}
+.singletrip-price-section {
+  display: flex;
+  flex-direction: column;
+    border: 1px solid rgb(230, 230, 230);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.singletrip-price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+ 
+}
+.singletrip-price p {
+  font-size: larger;
+  font-weight: bolder;
+  margin: 0;
 }

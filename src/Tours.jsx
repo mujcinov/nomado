@@ -3,8 +3,8 @@ import { useState } from "react";
 import TripCard from "./components/TripCard";
 import { destinations } from "./assets/destinations";
 import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
-import Navigation from "./components/Navigation";
+
+import TripNavigation from "./components/TripNavigation";
 
 function Tours() {
   const { slug } = useParams();
@@ -26,37 +26,7 @@ function Tours() {
 
   return (
     <div className="wrapperTours">
-      <div className="topbar-tours">
-        <Link to="/">
-  <img src="/logo2.png" alt="Nomado Travel logo" className="logo-topbar" />
-</Link>
-        <div className="dropdown-tours">
-          <div
-            className={`dropdown-toggle-tours ${open ? "open" : ""}`}
-            onClick={() => setOpen(!open)}
-          >
-            Odaberite destinaciju
-            <span className="arrow">▾</span>
-          </div>
-
-          <div className={`dropdown-menu-tours ${open ? "open" : ""}`}>
-            <Link to="/putovanja" onClick={() => setOpen(false)}>
-              Sve destinacije
-            </Link>
-
-            {uniqueDestinations.map((dest) => (
-              <Link
-                key={dest.slug}
-                to={`/putovanja/${dest.slug}`}
-                onClick={() => setOpen(false)}
-              >
-                {dest.name}
-              </Link>
-            ))}
-          </div>
-        </div>
-        <div className="nav-wrap-tours"><Navigation/></div>
-      </div>
+      <TripNavigation></TripNavigation>
       <div className="text-bar">
         <div>
           <p>Rezultati pretrage</p>
