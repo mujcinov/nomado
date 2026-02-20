@@ -26,18 +26,21 @@ html, body {
 
 .gallery-scroll {
   width: 100vw;
-  
+  position: relative;
+ 
+  padding-left: 1rem;
+  padding-right: 2rem;
+
   display: grid;
-  grid-auto-flow: row;       /* stavlja grid po kolonama horizontalno */
-  grid-template-columns:repeat(14, 75px);    /* širina “jedne jedinice” */
-  grid-auto-rows: 50px; /* broj redova i visina */
+  grid-auto-flow: row;
+  grid-template-columns: repeat(14, 75px);
+  grid-auto-rows: 50px;
   gap: 14px;
-  overflow-x: auto;             /* omogući horizontalni scroll */
-  padding-bottom: 10px;         /* da scrollbar ne preklapa slike */
-  scroll-snap-type: x mandatory; /* opcionalno: snap kada swipe */
-  overflow-x: auto;       /* scroll i dalje radi */
-  scrollbar-width: none;  /* Firefox */
-  -ms-overflow-style: none; /* IE 10+ */
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .gallery-scroll img {
